@@ -1,0 +1,19 @@
+class Item {
+protected:
+    std::string name;
+    int price;
+
+public:
+    Item(std::string itemName, int itemPrice)
+        : name(itemName), price(itemPrice) {}
+
+    virtual void use(Player& player) const = 0;
+
+    std::string getName() const {
+        return name;
+    }
+
+    int getPrice() const {
+        return price;
+    }
+};
