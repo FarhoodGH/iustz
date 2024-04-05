@@ -1,0 +1,44 @@
+class Enemy {
+protected:
+    std::string type;
+    int level;
+    int health;
+    int attack;
+
+public:
+    Enemy(std::string enemyType, int enemyLevel, int enemyHealth, int enemyAttack)
+        : type(enemyType), level(enemyLevel), health(enemyHealth), attack(enemyAttack) {}
+
+    virtual void attackPlayer() {
+        std::cout << "The enemy attacks the player!" << std::endl;
+    }
+   void takeDamage(int damage) {
+    health -= damage;
+    if (health <= 0) {
+        std::cout << type << " has been defeated!" << std::endl;
+    }
+}
+   void attackPlayer(Player& player);
+   
+
+    bool isAlive() const {
+        return health > 0;
+    }
+
+    // Getters and setters
+    std::string getType() const {
+        return type;
+    }
+
+    int getLevel() const {
+        return level;
+    }
+
+    int getHealth() const {
+        return health;
+    }
+
+    int getAttack() const {
+        return attack;
+    }
+};
