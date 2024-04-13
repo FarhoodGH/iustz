@@ -1,6 +1,6 @@
-# isutz
+
 # IUSTZ
-Coded By [Farhood Ghanbari](https://github.com/farhoodgh) & [Mehraveh Mafi]([https://github.com/F-hasani](https://github.com/Mehraveh-Mafi) & [Bahman Asgari](https://github.com/Bhmnasgary)
+Coded By [Farhood Ghanbari](https://github.com/farhoodgh) & [Mehraveh Mafi](https://github.com/Mehraveh-Mafi) & [Bahman Asgari](https://github.com/Bhmnasgary)
 
 ## Requirement
 > You need a C++ compliler to run the code.
